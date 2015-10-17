@@ -6,16 +6,16 @@
 
 class Snake{
 private:
-    int posX;
-    int posY;
+    double posX;
+    double posY;
     int radius;
-    int movingSteps;
+    double movingSteps;
     QVector <Snake> *snakeParts;
 
 
 public:
     Snake();
-    Snake(int x, int y ,int r);
+    Snake(double x, double y ,int r);
     void initSnake();
     void grow();
     void move();
@@ -23,17 +23,16 @@ public:
     void moveDown();
     void moveLeft();
     void moveRight();
-    void testVoid();
 
 
-    int getPosX() const;
-    void setPosX(int value);
-    int getPosY() const;
-    void setPosY(int value);
+    double getPosX() const;
+    void setPosX(double value);
+    double getPosY() const;
+    void setPosY(double value);
     int getRadius() const;
     void setRadius(int value);
-    int getMovingSteps() const;
-    void setMovingSteps(int value);
+    double getMovingSteps() const;
+    void setMovingSteps(double value);
     QVector<Snake> *getSnakeParts() const;
 
 //signals:

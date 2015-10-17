@@ -9,10 +9,10 @@ Snake::Snake(){
     this->posX = 100;
     this->posY = 100;
     this->radius = 10;
-    this->movingSteps = 2;
+    this->movingSteps = 1;
 }
 
-Snake::Snake(int x, int y, int r){
+Snake::Snake(double x, double y, int r){
     this->posX = x;
     this->posY = y;
     this->radius = r;
@@ -27,11 +27,10 @@ void Snake::initSnake(){
 */
 }
 
-void Snake::testVoid(){}
 void Snake::grow(){}
 
 void Snake::move(){
-    this->posX += movingSteps;
+    this->posX += 0.02;
 }
 
 void Snake::moveUp(){
@@ -62,22 +61,22 @@ QVector<Snake> *Snake::getSnakeParts() const
     return snakeParts;
 }
 
-int Snake::getPosX() const
+double Snake::getPosX() const
 {
     return posX;
 }
 
-void Snake::setPosX(int value)
+void Snake::setPosX(double value)
 {
    posX = value;
 }
 
-int Snake::getPosY() const
+double Snake::getPosY() const
 {
     return posY;
 }
 
-void Snake::setPosY(int value)
+void Snake::setPosY(double value)
 {
     posY = value;
 }
@@ -92,12 +91,12 @@ void Snake::setRadius(int value)
     radius = value;
 }
 
-int Snake::getMovingSteps() const
+double Snake::getMovingSteps() const
 {
     return movingSteps;
 }
 
-void Snake::setMovingSteps(int value)
+void Snake::setMovingSteps(double value)
 {
     movingSteps = value;
 }

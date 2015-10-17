@@ -15,10 +15,12 @@ TEMPLATE = app
 SOURCES += main.cpp\
         game.cpp \
     field.cpp \
-    snake.cpp
+    snake.cpp \
+    food.cpp
 
 HEADERS  += game.h \
     field.h \
-    snake.h
+    snake.h \
+    food.h
 
 FORMS    += game.ui

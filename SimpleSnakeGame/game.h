@@ -6,9 +6,11 @@
 #include <QKeyEvent>
 #include <QWidget>
 #include <QtGui>
+#include <QVector>
 
 #include "field.h"
 #include "snake.h"
+#include "food.h"
 namespace Ui {
 class Game;
 }
@@ -28,6 +30,8 @@ public:
     void keyPressEvent(QKeyEvent * event);
     void createField();
     void createSnake();
+    void getPosForFood();
+    void createFood(bool value);
 
 
 
@@ -36,6 +40,11 @@ private:
     Ui::Game *ui;
     Field *field;
     Snake *snake;
+    Food *food;
+
+    QVector<int> foodPos;
+    bool foodHasBeenHited;
+    bool colidate_snake_food();
 
 
 };
