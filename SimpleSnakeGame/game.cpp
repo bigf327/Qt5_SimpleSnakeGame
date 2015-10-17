@@ -65,10 +65,4 @@ void Game::createSnake(){
 void Game::paintEvent(QPaintEvent *e){
    createField();
    createSnake();
-   int test = 1;
-   while(test == 1){
-       snake->move();
-       update();
-   }
-
 }

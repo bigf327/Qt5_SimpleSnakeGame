@@ -23,6 +23,7 @@ public:
     void moveDown();
     void moveLeft();
     void moveRight();
+    void testVoid();
 
 
     int getPosX() const;

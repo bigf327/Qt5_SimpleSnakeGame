@@ -27,6 +27,7 @@ void Snake::initSnake(){
 */
 }
 
+void Snake::testVoid(){}
 void Snake::grow(){}
 
 void Snake::move(){
